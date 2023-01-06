@@ -65,11 +65,11 @@ $ find /etc 2>/dev/null | grep '\.conf$' | grep [[:upper:][:digit:]]
 P9-13 外帶參數
 $#  抓程式後面接幾個參數
 if [ $# -eq 1 ] then… 判斷是否只接一個參數
-$*  ifs (先不用管)
+$* => ifs (先不用管)
 $@ (先不用管)
-$1 第一個參數
+$1 =>第一個參數
 
-$? 這個指令有沒有執行成功(系統存結果在這邊)
+$? =>這個指令有沒有執行成功(系統存結果在這邊)
 
 
 Ch10是考試重點
@@ -158,7 +158,7 @@ systemctl start httpd馬上啟動
 systemctl enable httpd 下次開機自動啟動
 systemctl stop httpd 關閉
 
-httpd  /var/www/html
+httpd => /var/www/html
 
 在/var/www/html/index.html改成自己要的東西
 Ex. echo 1_A9210256 > /var/www/html/index.html
